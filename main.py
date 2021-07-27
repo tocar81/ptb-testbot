@@ -7,7 +7,9 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger()
+
 if __name__ == "__main__":
+    # TOKEN="1908116160:AAEDyquTDqlP0F__WvTJI5zjoW8I7zFHgDE"
     my_bot = telegram.Bot(token=TOKEN)
     updater = Updater(my_bot.token)
     print(my_bot.getMe())
@@ -44,4 +46,5 @@ dp.add_handler(ConversationHandler(
     fallbacks=[]
 ))
 updater.start_webhook("0.0.0.0", PORT, TOKEN, webhook_url="https://examensito-bot.herokuapp.com/" + TOKEN)
+# updater.start_polling()
 updater.idle()
