@@ -9,7 +9,7 @@ logging.basicConfig(
 logger = logging.getLogger()
 
 if __name__ == "__main__":
-    # TOKEN="1908116160:AAEDyquTDqlP0F__WvTJI5zjoW8I7zFHgDE"
+    # TOKEN=""
     my_bot = telegram.Bot(token=TOKEN)
     updater = Updater(my_bot.token)
     print(my_bot.getMe())
