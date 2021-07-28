@@ -19,7 +19,7 @@ REPETIR = 0
 
 
 def start_callback(update, context):
-    update.message.reply_text("Estoy vivo ya en HEROKU...4")
+    update.message.reply_text("Estoy probandome HEROKU...4")
     return 0
 
 
