@@ -45,6 +45,6 @@ dp.add_handler(ConversationHandler(
     },
     fallbacks=[]
 ))
-updater.start_webhook("0.0.0.0", PORT, TOKEN, webhook_url="https://examensito-bot.herokuapp.com/" + TOKEN)
+updater.start_webhook("0.0.0.0", PORT, TOKEN, webhook_url="https://examensitobot.herokuapp.com/" + TOKEN)
 # updater.start_polling()
 updater.idle()
